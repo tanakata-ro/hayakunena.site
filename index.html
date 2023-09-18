@@ -7,17 +7,21 @@
     <meta name="description" content="早く寝ましょう">
     <meta property="og:title" content="早く寝なさい" />
     <meta property="og:description" content="早く寝ましょう">
-    <meta property="og:url" content="https://omae.dev/">
+    <meta property="og:url" content="https://hayakunena.site/">
     <meta property="og:site_name" content="早く寝なさい" />
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="早く寝なさい">
     <meta name="twitter:description" content="出来るだけ早く寝ましょう。">
+    <meta name=”twitter:image” content="hayakunena.png"/>
     <title>早く寝なさい</title>
-    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'soukou';
+            src: url('/SoukouMincho-Font/SoukouMincho.ttf') format('truetype');
+        }
         .nero {
             height: 100vh;
             display: flex;
@@ -29,31 +33,32 @@
         }
 
         .nero h1 {
-            font-size: 3rem;
-            font-family: sans-serif;
-        }
-
-        h1 {
-            font-family: sans-serif;
+            font-size: 5rem;
+            font-family: 'Noto Sans JP', sans-serif;
         }
 
         .hayaku {
             flex-direction: row;
             display: flex;
         }
+        @media only screen and (max-width: 750px) {
+            .nero h1 {
+            font-size: 3rem;
+            font-family: 'Noto Sans JP', sans-serif;
+            }
+        }
     </style>
 </head>
 
 <body id="hayo">
     <div class="nero">
-        <h1 id="nero">早く寝ましょう</h1>
+        <h1 id="nero">早く寝なさい</h1>
         <div class="hayaku">
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-                data-show-count="false">Tweet</a>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="早く寝なさい" data-url="https://hayakunena.site/" data-lang="ja" data-show-count="false" id="tweet-button">Tweet</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             <a href="https://github.com/tanakata-ro/hayakunena.site">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
-                    height="20px" viewBox="0 0 20 19" version="1.1">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
+                    height="28px" viewBox="0 0 20 19" version="1.1">
                     <g id="surface1">
                         <path
                             style=" stroke:none;fill-rule:evenodd;fill:rgb(14.117647%,16.078431%,18.431373%);fill-opacity:1;"
@@ -63,6 +68,7 @@
             </a>
         </div>
     </div>
+    <script src="script.js"></script>
     <!--こんなところ見てないで早く寝ましょう。-->
 </body>
 
